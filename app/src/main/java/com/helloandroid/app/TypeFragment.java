@@ -19,9 +19,19 @@ import butterknife.ButterKnife;
 public class TypeFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
     @Bind(R.id.swip_refresh_layout) SwipeRefreshLayout swipeRefreshLayout;
+
     @Bind(R.id.typeList) RecyclerView recyclerView;
 
+    int position;
     TypeAdapter typeAdapter;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        Bundle bundle = getArguments();
+        this.position = bundle.getInt("position");
+    }
 
     @Nullable
     @Override
@@ -35,7 +45,7 @@ public class TypeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         swipeRefreshLayout.setColorSchemeColors(R.color.primary_dark_material_dark);
         swipeRefreshLayout.setOnRefreshListener(this);
 
-        typeAdapter = new TypeAdapter(getActivity());
+        typeAdapter = new TypeAdapter(getActivity(), Config.TYPE_LIST[position].TYPE_ITEMS);
         recyclerView.setAdapter(typeAdapter);
 
         return v;

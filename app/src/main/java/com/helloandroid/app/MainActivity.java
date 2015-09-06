@@ -45,17 +45,22 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public Fragment getItem(int position) {
             Fragment fragment = new TypeFragment();
+
+            Bundle bundle = new Bundle();
+            bundle.putInt("position", position);
+
+            fragment.setArguments(bundle);
             return fragment;
         }
 
         @Override
         public int getCount() {
-            return 3;
+            return Config.TYPE_LIST.length;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return "UI";
+            return Config.TYPE_LIST[position].TITLE;
         }
     }
 }
