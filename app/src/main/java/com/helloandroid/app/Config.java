@@ -1,5 +1,6 @@
 package com.helloandroid.app;
 
+import com.helloandroid.image.FrescoActivity;
 import com.helloandroid.image.SvgAndroidActivity;
 
 /**
@@ -38,7 +39,7 @@ public class Config {
 
     static final TypeItem[] TYPE_ITEMS_IMAGE = new TypeItem[]{
             new TypeItem("svg-android", SvgAndroidActivity.class),
-            new TypeItem("fresco", null),
+            new TypeItem("fresco", FrescoActivity.class),
             new TypeItem("picasso", null),
     };
 
