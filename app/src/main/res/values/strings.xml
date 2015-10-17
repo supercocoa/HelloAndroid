@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">HelloAndroid</string>
     <string name="hello_world">Hello world!</string>
+
+
+    <string name="test_pic1">http://www.personal.psu.edu/jul229/mini.jpg</string>
+
 </resources>

@@ -1,5 +1,6 @@
 package com.helloandroid.app;
 
+import com.helloandroid.framework.RxAndroidActivity;
 import com.helloandroid.image.FrescoActivity;
 import com.helloandroid.image.SvgAndroidActivity;
 
@@ -56,7 +57,7 @@ public class Config {
 
     static final TypeItem[] TYPE_ITEMS_FRAMEWORK = new TypeItem[]{
             new TypeItem("butterknife", null),
-            new TypeItem("rxAndroid", null),
+            new TypeItem("rxAndroid", RxAndroidActivity.class),
             new TypeItem("dagger", null),
             new TypeItem("otto", null),
             new TypeItem("EventBus", null),

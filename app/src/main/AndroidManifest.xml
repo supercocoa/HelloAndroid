@@ -28,6 +28,11 @@
                 android:theme="@style/AppTheme">
         </activity>
 
+        <activity
+                android:name="com.helloandroid.framework.RxAndroidActivity"
+                android:theme="@style/AppTheme">
+        </activity>
+
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"/>

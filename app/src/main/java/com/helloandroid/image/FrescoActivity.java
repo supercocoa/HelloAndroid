@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.helloandroid.app.R;
 
 /**
  * Created by scott on 15/9/9.
@@ -23,7 +24,7 @@ public class FrescoActivity extends AppCompatActivity {
 
         setContentView(simpleDraweeView);
 
-        Uri uri = Uri.parse("http://www.personal.psu.edu/jul229/mini.jpg");
+        Uri uri = Uri.parse(getString(R.string.test_pic1));
         simpleDraweeView.setImageURI(uri);
     }
 }
