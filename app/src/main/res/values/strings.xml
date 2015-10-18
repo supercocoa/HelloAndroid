@@ -3,6 +3,14 @@
     <string name="hello_world">Hello world!</string>
 
 
-    <string name="test_pic1">http://www.personal.psu.edu/jul229/mini.jpg</string>
+    <string name="test_pic1">http://blog.changecong.com/wp-content/uploads/2014/12/android-wallpaper5_2560x1600_1.jpg
+    </string>
+    <string name="test_pic2">http://www.cxyym.com/wp-content/uploads/2014/08/java_tech.jpg</string>
+
+    <string name="btn1">btn1</string>
+    <string name="btn2">btn2</string>
+    <string name="btn3">btn3</string>
+    <string name="btn4">btn4</string>
+
 
 </resources>
