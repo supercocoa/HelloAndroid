@@ -4,6 +4,7 @@ import com.helloandroid.framework.RxAndroidActivity;
 import com.helloandroid.image.FrescoActivity;
 import com.helloandroid.image.PicassoActivity;
 import com.helloandroid.image.SvgAndroidActivity;
+import com.helloandroid.net.OkHttpActivity;
 
 /**
  * Created by scott on 15/9/6.
@@ -53,7 +54,7 @@ public class Config {
 
     static final TypeItem[] TYPE_ITEMS_NET = new TypeItem[]{
             new TypeItem("volley", null),
-            new TypeItem("okHttp", null)
+            new TypeItem("okHttp", OkHttpActivity.class)
     };
 
     static final TypeItem[] TYPE_ITEMS_FRAMEWORK = new TypeItem[]{
