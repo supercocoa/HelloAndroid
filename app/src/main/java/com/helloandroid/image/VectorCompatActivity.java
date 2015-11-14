@@ -37,10 +37,10 @@ public class VectorCompatActivity extends AppCompatActivity {
     }
 
     private void makeSvg() {
-//        imageView.setBackground(getDrawable(R.drawable.homer_simpson));
+          imageView.setImageDrawable(getResources().getDrawable(R.drawable.homer_simpson));
 //        imageView.setBackground(ResourcesCompat.getDrawable(this, R.drawable.homer_simpson));
-        Drawable vectorDrawable = ResourcesCompat.getDrawable(this, R.drawable.homer_simpson);
-        vectorDrawable.setAlpha(50);
-        imageView.setImageDrawable(vectorDrawable);
+        //Drawable vectorDrawable = ResourcesCompat.getDrawable(this, R.drawable.homer_simpson);
+        //vectorDrawable.setAlpha(50);
+        //imageView.setImageDrawable(vectorDrawable);
     }
 }
