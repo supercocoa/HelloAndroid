@@ -4,6 +4,7 @@ import com.helloandroid.framework.RxAndroidActivity;
 import com.helloandroid.image.FrescoActivity;
 import com.helloandroid.image.PicassoActivity;
 import com.helloandroid.image.SvgAndroidActivity;
+import com.helloandroid.image.VectorCompatActivity;
 import com.helloandroid.lib.ui.AVLoadingIndicatorViewActivity;
 import com.helloandroid.net.OkHttpActivity;
 
@@ -44,6 +45,7 @@ public class Config {
 
     static final TypeItem[] TYPE_ITEMS_IMAGE = new TypeItem[]{
             new TypeItem("svg-android", SvgAndroidActivity.class),
+            new TypeItem("vector-compat", VectorCompatActivity.class),
             new TypeItem("fresco", FrescoActivity.class),
             new TypeItem("picasso", PicassoActivity.class),
     };
