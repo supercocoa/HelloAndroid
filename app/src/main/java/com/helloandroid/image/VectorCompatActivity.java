@@ -1,6 +1,5 @@
 package com.helloandroid.image;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -8,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import com.helloandroid.app.R;
-import com.wnafee.vector.compat.ResourcesCompat;
 
 /**
  * Created by scott on 15/11/14.
