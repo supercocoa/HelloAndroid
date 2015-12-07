@@ -5,6 +5,7 @@ import com.helloandroid.image.FrescoActivity;
 import com.helloandroid.image.PicassoActivity;
 import com.helloandroid.image.SvgAndroidActivity;
 import com.helloandroid.image.VectorCompatActivity;
+import com.helloandroid.lib.animation.ReboundActivity;
 import com.helloandroid.lib.ui.AVLoadingIndicatorViewActivity;
 import com.helloandroid.net.OkHttpActivity;
 
@@ -39,7 +40,7 @@ public class Config {
     };
 
     static final TypeItem[] TYPE_ITEMS_ANIMATIONS = new TypeItem[]{
-            new TypeItem("rebound", null),
+            new TypeItem("rebound", ReboundActivity.class),
             new TypeItem("Backboard", null),
     };
 

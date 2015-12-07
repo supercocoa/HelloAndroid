@@ -9,6 +9,10 @@
                 android:name="com.helloandroid.lib.ui.AVLoadingIndicatorViewActivity"
                 android:label="@string/app_name"/>
 
+        <activity
+                android:name="com.helloandroid.lib.animation.ReboundActivity"
+                />
+
 
     </application>
 

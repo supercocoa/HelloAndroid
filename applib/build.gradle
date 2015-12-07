@@ -5,8 +5,8 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        minSdkVersion 9
-        targetSdkVersion 16
+        minSdkVersion 16
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
     }
@@ -35,4 +35,7 @@ dependencies {
 
     compile 'com.wang.avi:library:1.0.0'
     compile 'com.nineoldandroids:library:2.4.0'
+
+    compile 'com.facebook.rebound:rebound:0.3.8'
+
 }
