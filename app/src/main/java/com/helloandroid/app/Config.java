@@ -1,5 +1,6 @@
 package com.helloandroid.app;
 
+import com.helloandroid.db.greendao.GreenDaoActivity;
 import com.helloandroid.framework.RxAndroidActivity;
 import com.helloandroid.image.FrescoActivity;
 import com.helloandroid.image.PicassoActivity;
@@ -53,7 +54,7 @@ public class Config {
 
     static final TypeItem[] TYPE_ITEMS_DB = new TypeItem[]{
             new TypeItem("realm", null),
-            new TypeItem("greenDAO", null),
+            new TypeItem("greenDAO", GreenDaoActivity.class),
             new TypeItem("ormlite", null),
     };
 

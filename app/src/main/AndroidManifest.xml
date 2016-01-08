@@ -52,6 +52,11 @@
                 android:theme="@style/AppTheme">
         </activity>
 
+        <activity
+                android:name="com.helloandroid.db.greendao.GreenDaoActivity"
+                android:theme="@style/AppTheme">
+        </activity>
+
     </application>
 
 
