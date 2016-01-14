@@ -3,6 +3,7 @@ package com.helloandroid.app;
 import com.helloandroid.db.greendao.GreenDaoActivity;
 import com.helloandroid.framework.RxAndroidActivity;
 import com.helloandroid.image.FrescoActivity;
+import com.helloandroid.image.GlideActivity;
 import com.helloandroid.image.PicassoActivity;
 import com.helloandroid.image.SvgAndroidActivity;
 import com.helloandroid.image.VectorCompatActivity;
@@ -50,6 +51,7 @@ public class Config {
             new TypeItem("vector-compat", VectorCompatActivity.class),
             new TypeItem("fresco", FrescoActivity.class),
             new TypeItem("picasso", PicassoActivity.class),
+            new TypeItem("glide", GlideActivity.class)
     };
 
     static final TypeItem[] TYPE_ITEMS_DB = new TypeItem[]{

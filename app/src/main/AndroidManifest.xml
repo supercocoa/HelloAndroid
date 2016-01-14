@@ -43,6 +43,11 @@
         </activity>
 
         <activity
+                android:name="com.helloandroid.image.GlideActivity"
+                android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
                 android:name="com.helloandroid.framework.RxAndroidActivity"
                 android:theme="@style/AppTheme">
         </activity>
