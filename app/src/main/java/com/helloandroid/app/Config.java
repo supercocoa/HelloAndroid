@@ -1,6 +1,7 @@
 package com.helloandroid.app;
 
 import com.helloandroid.db.greendao.GreenDaoActivity;
+import com.helloandroid.framework.OttoActivity;
 import com.helloandroid.framework.RxAndroidActivity;
 import com.helloandroid.image.FrescoActivity;
 import com.helloandroid.image.GlideActivity;
@@ -69,7 +70,7 @@ public class Config {
             new TypeItem("butterknife", null),
             new TypeItem("rxAndroid", RxAndroidActivity.class),
             new TypeItem("dagger", null),
-            new TypeItem("otto", null),
+            new TypeItem("otto", OttoActivity.class),
             new TypeItem("EventBus", null),
     };
 
