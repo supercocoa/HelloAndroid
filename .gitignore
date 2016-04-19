@@ -37,5 +37,3 @@ out/
 *.iml
 
 gradle.properties
-
-build.gradle
