@@ -9,6 +9,7 @@ import com.helloandroid.image.PicassoActivity;
 import com.helloandroid.image.SvgAndroidActivity;
 import com.helloandroid.image.VectorCompatActivity;
 import com.helloandroid.lib.animation.ReboundActivity;
+import com.helloandroid.lib.language.DuktapeActivity;
 import com.helloandroid.lib.ui.AVLoadingIndicatorViewActivity;
 import com.helloandroid.net.OkHttpActivity;
 
@@ -74,6 +75,10 @@ public class Config {
             new TypeItem("EventBus", null),
     };
 
+    static final TypeItem[] TYPE_ITEMS_LANGUAGE = new TypeItem[]{
+            new TypeItem("duktape", DuktapeActivity.class),
+    };
+
     public static final Type[] TYPE_LIST = {
             new Type("UI", TYPE_ITEMS_UI),
             new Type("ANIMATIONS", TYPE_ITEMS_ANIMATIONS),
@@ -81,6 +86,7 @@ public class Config {
             new Type("DB", TYPE_ITEMS_DB),
             new Type("NET", TYPE_ITEMS_NET),
             new Type("FRAMEWORK", TYPE_ITEMS_FRAMEWORK),
+            new Type("LANGUAGE", TYPE_ITEMS_LANGUAGE),
     };
 
 

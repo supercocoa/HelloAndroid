@@ -19,7 +19,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
@@ -39,5 +39,13 @@ dependencies {
     compile 'com.nineoldandroids:library:2.4.0'
 
     compile 'com.facebook.rebound:rebound:0.3.8'
+
+    compile 'com.squareup.duktape:duktape-android:0.9.5'
+    compile 'com.squareup.okio:okio:1.8.0'
+
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'io.reactivex:rxjava:1.1.5'
+
+    compile 'org.jooq:joor:0.9.5'
 
 }
