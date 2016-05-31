@@ -90,7 +90,7 @@ android {
 //            "*.gif",
 //            "resources.arsc"
 //    ]
-//    zipAlignPath = '/Users/scottgou/Library/Android/sdk/build-tools/23.0.3/zipalign'
+//    zipAlignPath = '/Users/scott/Library/Android/sdk/build-tools/23.0.3/zipalign'
 //    sevenZipPath = '/usr/local/Cellar/p7zip/15.09/bin/7z'
 //}
 
