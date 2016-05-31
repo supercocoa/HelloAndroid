@@ -10,7 +10,7 @@
             android:label="@string/app_name" />
 
         <activity android:name="com.helloandroid.lib.animation.ReboundActivity" />
-        <activity android:name="com.helloandroid.lib.language.DuktapeActivity" />
+        <activity android:name="com.helloandroid.lib.language.duktape.DuktapeActivity" />
 
 
     </application>

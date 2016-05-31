@@ -9,7 +9,7 @@ import com.helloandroid.image.PicassoActivity;
 import com.helloandroid.image.SvgAndroidActivity;
 import com.helloandroid.image.VectorCompatActivity;
 import com.helloandroid.lib.animation.ReboundActivity;
-import com.helloandroid.lib.language.DuktapeActivity;
+import com.helloandroid.lib.language.duktape.DuktapeActivity;
 import com.helloandroid.lib.ui.AVLoadingIndicatorViewActivity;
 import com.helloandroid.net.OkHttpActivity;
 

@@ -47,5 +47,6 @@ dependencies {
     compile 'io.reactivex:rxjava:1.1.5'
 
     compile 'org.jooq:joor:0.9.5'
+    compile 'com.squareup.moshi:moshi:1.2.0'
 
 }
