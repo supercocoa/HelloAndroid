@@ -8,6 +8,8 @@ import com.helloandroid.image.GlideActivity;
 import com.helloandroid.image.PicassoActivity;
 import com.helloandroid.image.SvgAndroidActivity;
 import com.helloandroid.image.VectorCompatActivity;
+import com.helloandroid.image.VectorDrawableActivity;
+import com.helloandroid.image.WebpActivity;
 import com.helloandroid.lib.animation.ReboundActivity;
 import com.helloandroid.lib.language.duktape.DuktapeActivity;
 import com.helloandroid.lib.ui.AVLoadingIndicatorViewActivity;
@@ -49,7 +51,9 @@ public class Config {
     };
 
     static final TypeItem[] TYPE_ITEMS_IMAGE = new TypeItem[]{
+            new TypeItem("webp", WebpActivity.class),
             new TypeItem("svg-android", SvgAndroidActivity.class),
+            new TypeItem("vector-drawable", VectorDrawableActivity.class),
             new TypeItem("vector-compat", VectorCompatActivity.class),
             new TypeItem("fresco", FrescoActivity.class),
             new TypeItem("picasso", PicassoActivity.class),
