@@ -36,9 +36,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    class MainPageAdapter extends FragmentStatePagerAdapter {
+    private class MainPageAdapter extends FragmentStatePagerAdapter {
 
-        public MainPageAdapter(FragmentManager fm) {
+        MainPageAdapter(FragmentManager fm) {
             super(fm);
         }
 
