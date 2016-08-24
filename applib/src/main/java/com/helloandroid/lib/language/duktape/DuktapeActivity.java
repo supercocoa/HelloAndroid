@@ -5,9 +5,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+
 import com.squareup.duktape.Duktape;
+
 import rx.Observable;
-import rx.Subscriber;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
@@ -46,13 +47,9 @@ public class DuktapeActivity extends Activity {
     protected void onResume() {
         super.onResume();
 
-        Observable.create(new Observable.OnSubscribe<Object>() {
-            @Override
-            public void call(Subscriber<? super Object> subscriber) {
-//                evaluateHelloWorld();
-//                evaluateUtf8();
-                evaluateBridge();
-            }
+        Observable.create(subscriber -> {
+            evaluateHelloWorld();
+            evaluateUtf8();
         })
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -85,14 +82,5 @@ public class DuktapeActivity extends Activity {
         } finally {
             duktape.close();
         }
-    }
-
-    private void evaluateBridge() {
-        BridgeEngine bridgeEngine = new BridgeEngine(getApplicationContext());
-        bridgeEngine.start();
-
-        bridgeEngine.evaluateFile("demo.js", true);
-
-        bridgeEngine.close();
     }
 }
