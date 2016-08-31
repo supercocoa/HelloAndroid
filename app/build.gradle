@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+
 
 
 android {
@@ -62,12 +64,17 @@ dependencies {
     compile 'com.squareup:otto:1.3.8'
     //compile 'com.wnafee:vector-compat:1.0.5'
 
-    compile 'com.squareup.okhttp:okhttp:2.5.0'
-    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
 
 //    compile 'com.parse.bolts:bolts-tasks:1.3.0'
 //    compile 'com.parse.bolts:bolts-applinks:1.3.0'
 
     compile 'de.greenrobot:greendao:2.0.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha1'
+
+    compile 'com.google.dagger:dagger:2.6'
+    apt 'com.google.dagger:dagger-compiler:2.6'
+
+    compile 'com.google.code.gson:gson:2.7'
 }
